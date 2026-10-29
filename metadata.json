@@ -1,0 +1,6 @@
+{
+  "name": "SakibAI - E-Commerce & AI Automation SaaS",
+  "description": "Enterprise-grade multi-tenant E-Commerce SaaS & AI automation platform with Steadfast courier, bKash PGW, AI copywriter, and Meta Messenger integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

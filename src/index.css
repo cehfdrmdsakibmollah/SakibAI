@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sakib-bg: #0B0F19;
+  --color-sakib-card: #111827;
+  --color-sakib-card-border: #1F2937;
+  --color-sakib-primary: #00F2FE;
+  --color-sakib-secondary: #4FACFE;
+  --color-sakib-text: #F8FAFC;
+  --color-sakib-success: #10B981;
+  --color-sakib-warning: #F59E0B;
+  --color-sakib-danger: #EF4444;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-bangla: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    background-color: #0B0F19;
+    color: #F8FAFC;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism & Neon Glow utilities */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 242, 254, 0.2);
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.08);
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.35);
+}
+
+.neon-text-glow {
+  text-shadow: 0 0 12px rgba(0, 242, 254, 0.5);
+}
+
+.neon-border {
+  border-color: rgba(0, 242, 254, 0.4);
+}
+
+/* Custom cyber scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00F2FE;
+}
